@@ -1,8 +1,18 @@
 package com.veiculo;
 
+import com.enumeracao.*;
+
 public class Carro extends Veiculo{
 	private float motorizacao;
-	private String cambio;
+	private Cambio cambio;
+	
+	public Carro(){}
+	
+	public Carro(String chassi, Montadora montadora, String modelo, String tipo, Cor cor, float preco, float motorizacao, Cambio cambio){
+		super(chassi, montadora, modelo, tipo, cor, preco);	
+		this.setMotorizacao(motorizacao);
+		this.setCambio(cambio);
+	}
 	
 	public float getMotorizacao() {
 		return motorizacao;
@@ -10,10 +20,10 @@ public class Carro extends Veiculo{
 	public void setMotorizacao(float motorizacao) {
 		this.motorizacao = motorizacao;
 	}
-	public String getCambio() {
+	public Cambio getCambio() {
 		return cambio;
 	}
-	public void setCambio(String cambio) {
+	public void setCambio(Cambio cambio) {
 		this.cambio = cambio;
 	}
 }

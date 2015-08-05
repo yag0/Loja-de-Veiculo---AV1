@@ -1,12 +1,26 @@
 package com.veiculo;
 
+import com.enumeracao.*;
+
 public abstract class Veiculo {
 	private String chassi;
-	private String montadora;
+	private Montadora montadora;
 	private String modelo;
 	private String tipo;
-	private String cor;
-	private float preco;	
+	private Cor cor;
+	private float preco;
+	
+	public Veiculo(){}
+	
+	public Veiculo(String chassi, Montadora montadora, String modelo, String tipo, Cor cor, float preco){
+		super();
+		this.chassi = chassi;
+		this.montadora = montadora;
+		this.modelo = modelo;
+		this.tipo = tipo;
+		this.cor = cor;
+		this.preco = preco;
+	}
 
 	public String getChassi() {
 		return chassi;
@@ -14,10 +28,10 @@ public abstract class Veiculo {
 	public void setChassi(String chassi) {
 		this.chassi = chassi;
 	}
-	public String getMontadora() {
+	public Montadora getMontadora() {
 		return montadora;
 	}
-	public void setMontadora(String montadora) {
+	public void setMontadora(Montadora montadora) {
 		this.montadora = montadora;
 	}
 	public String getModelo() {
@@ -32,10 +46,10 @@ public abstract class Veiculo {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public String getCor() {
+	public Cor getCor() {
 		return cor;
 	}
-	public void setCor(String cor) {
+	public void setCor(Cor cor) {
 		this.cor = cor;
 	}
 	public float getPreco() {
