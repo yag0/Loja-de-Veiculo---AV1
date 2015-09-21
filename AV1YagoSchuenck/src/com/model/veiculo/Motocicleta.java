@@ -1,4 +1,4 @@
-package com.veiculo;
+package com.model.veiculo;
 
 import com.enumeracao.*;
 
@@ -8,7 +8,7 @@ public class Motocicleta extends Veiculo{
 	
 	public Motocicleta(){}
 	
-	public Motocicleta(String chassi, Montadora montadora, String modelo, String tipo, Cor cor, float preco, int cilindrada, int capacidade) {
+	public Motocicleta(String chassi, Montadora montadora, String modelo, Tipo tipo, Cor cor, float preco, int cilindrada, int capacidade) {
 		super(chassi, montadora, modelo, tipo, cor, preco);
 		
 		this.setCilindrada(cilindrada);

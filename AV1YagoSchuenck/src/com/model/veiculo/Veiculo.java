@@ -1,4 +1,4 @@
-package com.veiculo;
+package com.model.veiculo;
 
 import com.enumeracao.*;
 
@@ -6,13 +6,13 @@ public abstract class Veiculo {
 	private String chassi;
 	private Montadora montadora;
 	private String modelo;
-	private String tipo;
+	private Tipo tipo;
 	private Cor cor;
 	private float preco;
 	
 	public Veiculo(){}
 	
-	public Veiculo(String chassi, Montadora montadora, String modelo, String tipo, Cor cor, float preco){
+	public Veiculo(String chassi, Montadora montadora, String modelo, Tipo tipo, Cor cor, float preco){
 		super();
 		this.chassi = chassi;
 		this.montadora = montadora;
@@ -40,10 +40,10 @@ public abstract class Veiculo {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public String getTipo() {
+	public Tipo getTipo() {
 		return tipo;
 	}
-	public void setTipo(String tipo) {
+	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
 	}
 	public Cor getCor() {
@@ -57,5 +57,5 @@ public abstract class Veiculo {
 	}
 	public void setPreco(float preco) {
 		this.preco = preco;
-	}
+	}			
 }

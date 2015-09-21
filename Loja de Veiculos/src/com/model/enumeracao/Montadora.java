@@ -1,7 +1,10 @@
-package com.enumeracao;
+package com.model.enumeracao;
 
 public enum Montadora {
-	YAMAHA(1, "yamaha"), BMW(2, "bmw"), SUZUKI(3, "suzuki"), HARLEY(4, "harley"), RENAULT(5, "renault"), CHEVROLET(6, "chevrolet"), FIAT(7, "fiat"), HONDA(8, "honda"), HYUNDAI(9, "hyundai");
+	YAMAHA(1, "yamaha"), BMW(2, "bmw"), SUZUKI(3, "suzuki"),
+	HARLEY(4, "harley"), RENAULT(5, "renault"),
+	CHEVROLET(6, "chevrolet"), FIAT(7, "fiat"),
+	HONDA(8, "honda"), HYUNDAI(9, "hyundai");
 	
 	private final int numMontadora;
 	private final String nomeMontadora;
