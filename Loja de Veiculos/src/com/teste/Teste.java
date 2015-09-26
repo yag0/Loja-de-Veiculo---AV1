@@ -1,4 +1,4 @@
-package com.principal;
+package com.teste;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import com.model.enumeracao.*;
 import com.model.loja.Loja;
 import com.model.veiculo.Veiculo;
 
-public class Principal {
+public class Teste {
 
 	public static void main(String[] args) {
 		Loja loja = new Loja();		
@@ -51,19 +51,7 @@ public class Principal {
 		veiculo3.setEspecificacao("Motorizacao", 3.0);
 		veiculo3.setEspecificacao("Cor", "Prata");
 		veiculo3.setEspecificacao("Cambio", "Automatico");		
-		loja.adicionarVeiculo(veiculo3);	
-		
-		//Cria um veiculo e adiciona na lista de estoque
-		//Verifica se a string e conrrespondente com os atributos do Enum (verificar - metodo generico) 
-		veiculo4.setTipoVeiculo(TipoVeiculo.CARRO);
-		veiculo4.setChassi("9BRHP11JOY5000001");
-		veiculo4.setPreco(40000);
-		veiculo4.setEspecificacao("Montadora", veiculo4.verificar(Montadora.class, "bmw"));
-		veiculo4.setEspecificacao("Tipo", veiculo4.verificar(Tipo.class, "esportivo"));
-		veiculo4.setEspecificacao("Motorizacao", 5.0);
-		veiculo4.setEspecificacao("Cor", veiculo4.verificar(Cor.class, "vermelho"));
-		veiculo4.setEspecificacao("Cambio", veiculo4.verificar(Cambio.class, "automatico"));		
-		loja.adicionarVeiculo(veiculo4);
+		loja.adicionarVeiculo(veiculo3);		
 		
 		//Lista o estoque completo 
 		loja.listarEstoque();

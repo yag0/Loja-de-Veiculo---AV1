@@ -1,6 +1,7 @@
 package com.model.enumeracao;
 
 public enum Cor {
+	
 	BRANCO(1, "branco"), PRATA(2, "prata"), PRETO(3, "preto"), VERMELHO(4, "vermelho");
 	
 	private int numCor;

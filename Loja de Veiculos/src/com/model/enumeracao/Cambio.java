@@ -1,6 +1,7 @@
 package com.model.enumeracao;
 
 public enum Cambio {
+	
 	AUTOMATICO(1, "automatico"), MANUAL(2, "manual");
 	
 	private int numCambio;
