@@ -49,6 +49,7 @@ public class Veiculo{
 	}
 	
 	//Verifica se os dados passados pelo usuario constam no Enum
+	//Caso nao esteja contido no enum ele gera uma menssagem de erro abortando o sistema
 	public <T extends Enum<T>> String verificar(Class<T> enumClass, String code){		
 				
 		for(Enum<T> item : enumClass.getEnumConstants()){		
@@ -56,6 +57,8 @@ public class Veiculo{
 				return item.toString();
 			}			
 		}
+		System.err.println("Does not check");
+		System.exit(0);
 		return null;
 	}	
 	

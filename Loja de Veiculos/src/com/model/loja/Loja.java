@@ -65,9 +65,8 @@ public class Loja {
 			}			
 		}
 		return null;
-	}	
+	}		
 	
-	// Sobrecarga do metodo listarEstoque
 	public void listarEstoque(){
 		
 		if(this.getEstoqueVeiculo().isEmpty()){
@@ -75,7 +74,7 @@ public class Loja {
 		}
 		else{
 			for(Veiculo veiculo : this.getEstoqueVeiculo()){
-				System.out.println("Tipo de Veiculo: " + veiculo.getTipoVeiculo());
+				System.out.println("Tipo de veiculo: " + veiculo.getTipoVeiculo());
 				System.out.println("Chassi:"+ veiculo.getChassi());
 				System.out.println("Preco:" + veiculo.getPreco());			
 				for(Entry<String, Object> entry : veiculo.getEspecificacao().entrySet()){
@@ -86,10 +85,11 @@ public class Loja {
 		}
 	}
 	
+	// Sobrecarga do metodo listarEstoque
 	public void listarEstoque(Veiculo veiculo){
 		
-		if(veiculo != null){
-			System.out.println("Tipo de Veiculo: " + veiculo.getTipoVeiculo());
+		if(veiculo != null){			
+			System.out.println("Tipo de veiculo: " + veiculo.getTipoVeiculo());
 			System.out.println("Chassi:"+ veiculo.getChassi());
 			System.out.println("Preco:" + veiculo.getPreco());			
 			for(Entry<String, Object> entry : veiculo.getEspecificacao().entrySet()){
@@ -101,14 +101,15 @@ public class Loja {
 		}
 	}
 	
+	// Sobrecarga do metodo listarEstoque
 	public void listarEstoque(ArrayList<Veiculo> listaDeVeiculo){
 		
 		if(listaDeVeiculo.isEmpty()){
 			System.out.println("Nao ha veiculos no estoque");
 		}
 		else{
-			for(Veiculo veiculo : listaDeVeiculo){
-				System.out.println("Tipo de Veiculo: " + veiculo.getTipoVeiculo());
+			for(Veiculo veiculo : listaDeVeiculo){				
+				System.out.println("Tipo de veiculo: " + veiculo.getTipoVeiculo());
 				System.out.println("Chassi:"+ veiculo.getChassi());
 				System.out.println("Preco:" + veiculo.getPreco());			
 				for(Entry<String, Object> entry : veiculo.getEspecificacao().entrySet()){

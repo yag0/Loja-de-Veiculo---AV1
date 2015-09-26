@@ -2,6 +2,6 @@ package com.view.input;
 
 import com.model.veiculo.Veiculo;
 
-public interface Criavel {
+public interface Creatable {
 	public void criarVeiculo(Veiculo veiculo);
 }
