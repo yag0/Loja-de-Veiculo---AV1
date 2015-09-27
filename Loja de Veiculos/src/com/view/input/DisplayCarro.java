@@ -59,7 +59,9 @@ public class DisplayCarro implements Creatable{
 			input.close();
 		}
 	}	
-		
+	
+	//Verifica se os dados passados pelo usuario constam no Enum
+	//Caso nao esteja contido no enum ele gera uma menssagem de erro abortando o sistema	
 	private <T extends Enum<T>> String verificar(Class<T> enumClass, String input){		
 		
 		for(Enum<T> item : enumClass.getEnumConstants())		
